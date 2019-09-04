@@ -1,0 +1,7 @@
+Recomended, see second answer using web.xml
+>>_____
+https://stackoverflow.com/questions/15961940/how-jsp-page-should-check-authentication
+________
+http://candidjava.com/tutorial/cookie-login-logout-session-example-using-servlet-jsp/
+
+https://www.tutorialspoint.com/jsp/jsp_security.htm
