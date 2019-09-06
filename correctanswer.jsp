@@ -39,7 +39,7 @@
 		   String option4 = rs.getString("option4");
 		   String correct = "";
 			String correctanswer=request.getParameter("correctanswer");
-		   
+			rs.close();
 		   out.println(correctanswer);
 			 if(correctanswer.equals("option1"))
 			   		correct = option1;

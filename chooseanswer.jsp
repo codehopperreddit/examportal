@@ -58,9 +58,11 @@
 		   String option2txt=request.getParameter("option2");
 		   String option3txt=request.getParameter("option3");
 		   String option4txt=request.getParameter("option4");
+		   rs.close();
 		   sql = "INSERT INTO mainquestions " + "VALUES ('"+newqninwords+"','"+questiontxt+"','"+option1txt+"','"+option2txt+"','"+option3txt+"','"+option4txt+"')";
 			
 		   stmt.executeUpdate(sql);
+
 		}
 		catch(SQLException se)
 		{

@@ -118,7 +118,7 @@
 		   
 		   
 		   
-		   
+		   rs.close();
 		 
 		}catch(SQLException se)
 		{

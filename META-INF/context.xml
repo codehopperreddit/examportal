@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
- Licensed to the Apache Software Foundation (ASF) under one or more
+  Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
@@ -15,9 +15,14 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<web-app>
-	<error-page>
-	 <error-code>404</error-code>
-	 <location>/404error.html</location>
-	</error-page>
-</web-app>
+<Context antiResourceLocking="false" privileged="true" >
+  <!--
+    Remove the comment markers from around the Valve below to limit access to
+    the host-manager application to clients connecting from localhost
+  -->
+  <!--
+  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
+  -->
+   
+</Context>
